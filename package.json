@@ -1,0 +1,34 @@
+{
+  "name": "mrdb",
+  "license": "MIT",
+  "description": "A redis like interface backed on mongodb",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisusakli/mrdb/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "async": "1.5.1",
+    "mongodb": "2.1.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4"
+  },
+  "bugs": {
+    "url": "https://github.com/barisusakli/mrdb/issues"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "maintainers": [
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "barisusakli@gmail.com",
+      "url": "https://github.com/barisusakli"
+    }
+  ]
+}
