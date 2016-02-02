@@ -20,13 +20,16 @@ module.exports = function(mrdb) {
 			});
 		});
 
-		it('should check if key exists', function(done) {
-			done();
-		});
-
 		describe('rename', function() {
 			before(function(done) {
-				mrdb.set('oldName', 'value', done);
+				async.parallel([
+					function (next) {
+						mrdb.set('oldName', 'value', next);
+					},
+					function (next) {
+						mrdb.delete('newName', next);
+					}
+				], done);
 			});
 
 			it('should rename a key', function(done) {
