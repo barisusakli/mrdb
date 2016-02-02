@@ -13,6 +13,7 @@ before(function(done) {
 });
 
 
+require('./keys')(mrdb);
 require('./hash')(mrdb);
 require('./set')(mrdb);
 require('./zset')(mrdb);
