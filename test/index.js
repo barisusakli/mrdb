@@ -14,6 +14,7 @@ before(function(done) {
 
 
 require('./hash')(mrdb);
+require('./set')(mrdb);
 
 
 after(function(done) {
