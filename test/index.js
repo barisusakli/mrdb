@@ -16,11 +16,13 @@ before(function(done) {
 require('./hash')(mrdb);
 require('./set')(mrdb);
 require('./zset')(mrdb);
+require('./list')(mrdb);
 
 
 after(function(done) {
 	done();
 });
+
 
 
 
